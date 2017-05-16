@@ -33,7 +33,7 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc
 source <(kubectl completion bash)
 mkdir ~/warsztaty
 cd ~/warsztaty
-git clone https://github.com/rhalaczek/KubernetesOpenSourceDay2017
+git clone https://github.com/linuxpolska/KubernetesOpenSourceDay2017
 cd ./KubernetesOpenSourceDay2017 
 ```
 
@@ -247,5 +247,7 @@ kubectl describe svc wordpress
 kubctl logs [pod nazwa]
 kubectl exec -it [pod nazwa] -- /bin/bash
 printenv
+kubectl get pod,svc,rs -l tier=mysql
+kubectl get pod,svc,rs -l app=wordpress
 ```
 
